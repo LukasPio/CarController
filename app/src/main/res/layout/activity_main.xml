@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="#00FFFFFF"
+        android:contentDescription="Icon to active bluetooth function">
+
+    <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/bluetooth_icon"
+            android:id="@+id/turnOnBluetooth"
+            style="@android:style/Widget.DeviceDefault.ImageButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="serre"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            android:onClick="onTurnOnBluetoothClick" />
+
+    <TextView
+            android:text="@string/bluetooth_status_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bluetoothStatus"
+            app:layout_constraintTop_toBottomOf="@+id/turnOnBluetooth"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:textSize="24sp"
+            android:textColor="@color/red" />
+
+    <Button
+            android:text="Enviar sinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/test"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bluetoothStatus"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="sendBluetoothSignal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

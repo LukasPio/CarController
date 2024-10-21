@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">test</string>
+    <string name="bluetooth_status_on">CONNECTED</string>
+    <string name="bluetooth_status_off">OFF</string>
+</resources>

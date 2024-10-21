@@ -1,0 +1,23 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color green
+color red
+color white
+drawable bluetooth_icon
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id bluetoothStatus
+id main
+id test
+id turnOnBluetooth
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string bluetooth_status_off
+string bluetooth_status_on
+style Base.Theme.Test
+style Theme.Test
+xml backup_rules
+xml data_extraction_rules
